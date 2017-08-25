@@ -2,7 +2,7 @@
 <?php 
 header("Content-type: text/html; charset=utf-8"); 
 $md_path_all = $lister->getListedPath();
-$md_path = explode("pw", $md_path_all);
+$md_path = explode("cc", $md_path_all);
 if($md_path[1] != ""){
 	$md_path_last = substr($md_path[1], -1);
 	if($md_path_last != "/"){
@@ -15,7 +15,7 @@ $md_text = file_get_contents($md_file);
 ?>
 <html>
     <head>
-        <title>DOUBI Soft <?php echo $md_path_all; ?></title>
+        <title>DoracoinCloud <?php echo $md_path_all; ?></title>
         <link rel="shortcut icon" href="<?php echo THEMEPATH; ?>/img/folder.png">
         <!-- STYLES -->
         <link rel="stylesheet" href="/resources/themes/bootstrap/css/bootstrap.min.css">
